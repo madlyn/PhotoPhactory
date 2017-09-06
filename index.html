@@ -28,14 +28,14 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>                        
                 </button>
-                <a class="navbar-brand" href="#"><img src="index/2.png" class="img-responsive" style="width: 200px; margin-top: -16px;"></a>
+                <a class="navbar-brand" href="index.html"><img src="index/2.png" class="img-responsive" style="width: 200px; margin-top: -16px;"></a>
               </div>
               <div class="collapse navbar-collapse navbar-right" id="myNavbar">
                 <ul class="nav navbar-nav">
-                  <li class="active"><a href="#banner">Home</a></li>
-                  <li class=""><a href="/Users/ahmad/Desktop/PhotoPhactory1/services.html">Services</a></li>
-					<li class=""><a href="#about">About Us</a></li>
-                  <li class=""><a href="ContactUs/ContactUs.html">Contact Us</a></li>
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li class=""><a href="services.html">Services</a></li>
+					<li class=""><a href="about.html">About Us</a></li>
+                  <li class=""><a href="contactUs.html">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -163,7 +163,7 @@
   </footer>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="index/js/bootstrap.min.js"></script>
     <script>
@@ -171,7 +171,7 @@
     
     // Add smooth scrolling to all links in navbar
     $(".navbar a,a.btn-appoint, .quick-info li a, .overlay-detail a").on('click', function(event) {
-        event.preventDefault();
+       // event.preventDefault();
         var hash = this.hash;
         $('html, body').animate({
             scrollTop: $(hash).offset().top
