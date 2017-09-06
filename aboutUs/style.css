@@ -1,4 +1,8 @@
 /* HTML5 display-role reset for older browsers */
+@font-face {
+	font-family: FV_Almelo;
+	src:url(fonts/FV_Almelo.ttf)
+}
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
