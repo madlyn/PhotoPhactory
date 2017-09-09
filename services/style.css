@@ -95,11 +95,11 @@ Header
 }
 .navbar-default {
     background-color: #fff;
-    padding: 20px 0;
+    
     transition: all 0.3s;
 }
 .navbar-default {
-    background-color: transparent;
+    background-color: #292c2f;
     border: 0px;
 }
 .navbar {
