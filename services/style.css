@@ -3,6 +3,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+@font-face {
+    font-family: FVFont;
+    src: url(FV_Almelo.ttf);
+}
 body {
 	line-height: 1.4;
 	font-family: 'Poppins', sans-serif;
@@ -32,7 +36,7 @@ a:hover, a:focus{
 	text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6, p{
-    font-family: 'FV Almelo', sans-serif;
+    font-family: 'FVFont', sans-serif;
 }
 p {
 	font-size: 20px;
@@ -180,11 +184,11 @@ Header
     text-align: left;
     text-transform: capitalize;
     font-weight: 700;
-    font-family: 'FV Almelo', serif;
+    font-family: 'FVFont', serif;
     letter-spacing: 3px; 
 }
 .banner-text h3{
-    font-family: "FV Almelo",sans-serif;
+    font-family: "FVFont",sans-serif;
     font-weight: 300;
     font-size: 48px;
     color: #00ACC2;

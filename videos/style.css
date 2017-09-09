@@ -19,6 +19,11 @@ a:hover {
   text-decoration: none;
 }
 
+@font-face {
+    font-family: FVFont;
+    src: url(FV_Almelo.ttf);
+}
+
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -140,11 +145,11 @@ body {
     text-align: left;
     text-transform: capitalize;
     font-weight: 700;
-    font-family: 'FV Almelo', serif;
+    font-family: 'FVFont', serif;
     letter-spacing: 3px; 
 }
 .banner-text h3{
-    font-family: "FV Almelo",sans-serif;
+    font-family: "FVFont",sans-serif;
     font-weight: 300;
     font-size: 48px;
     color: #00ACC2;
