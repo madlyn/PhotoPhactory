@@ -302,8 +302,13 @@ body {
   font-weight: bold;
 }
 
+@font-face {
+    font-family: GVFont;
+    src: url(GreatVibes-Regular.otf);
+}
+
 .cover-heading {
-  font-family: "Great Vibes", serif;
+  font-family: "GVFont", serif;
   font-size: 60px;
   transform: rotate(-6deg);
   -ms-transform: rotate(-6deg);

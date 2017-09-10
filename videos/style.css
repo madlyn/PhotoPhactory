@@ -13,6 +13,11 @@ a:hover {
   -o-transition: 0.2s;
 }
 
+@font-face {
+    font-family: GVFont;
+    src: url(GreatVibes-Regular.otf);
+}
+
 a:focus,
 a:hover {
   opacity: .7;
@@ -303,7 +308,7 @@ body {
 }
 
 .cover-heading {
-  font-family: "Great Vibes", serif;
+  font-family: "GVFont", serif;
   font-size: 60px;
   transform: rotate(-6deg);
   -ms-transform: rotate(-6deg);
