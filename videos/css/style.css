@@ -14,14 +14,19 @@ a:hover {
 }
 
 @font-face {
-    font-family: FVFont;
-    src: url(FV_Almelo.ttf);
+    font-family: GVFont;
+    src: url(fonts/GreatVibes-Regular.otf);
 }
 
 a:focus,
 a:hover {
   opacity: .7;
   text-decoration: none;
+}
+
+@font-face {
+    font-family: FVFont;
+    src: url(fonts/FV_Almelo.ttf);
 }
 
 /* Custom default button */
@@ -300,11 +305,6 @@ body {
 .cover .btn-lg {
   padding: 15px 50px;
   font-weight: bold;
-}
-
-@font-face {
-    font-family: GVFont;
-    src: url(GreatVibes-Regular.otf);
 }
 
 .cover-heading {

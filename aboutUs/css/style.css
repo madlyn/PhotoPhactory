@@ -16,7 +16,7 @@ ol, ul {
 
 @font-face {
     font-family: FVFont;
-    src: url(FV_Almelo.ttf);
+    src: url(fonts/FV_Almelo.ttf);
 }
 
 blockquote, q {

@@ -6,7 +6,7 @@ footer, header, hgroup, menu, nav, section {
 
 @font-face {
     font-family: FVFont;
-    src: url(FV_Almelo.ttf);
+    src: url(fonts/FV_Almelo.ttf);
 }
 
 body {
@@ -163,7 +163,7 @@ Header
     background-color: rgba(12, 184, 182) !important;
 }
 #header{
-    background: url('1.jpg') no-repeat fixed;
+    background: url('../img/1.jpg') no-repeat fixed;
     background-size: cover;
     min-height: 720px;
     position: relative;

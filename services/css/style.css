@@ -3,6 +3,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+@font-face {
+    font-family: FVFont;
+    src: url(fonts/FV_Almelo.ttf);
+}
 body {
 	line-height: 1.4;
 	font-family: 'Poppins', sans-serif;
@@ -15,10 +19,6 @@ ol, ul {
 }
 blockquote, q {
 	quotes: none;
-}
-@font-face {
-    font-family: FVFont;
-    src: url(fonts/FV_Almelo.ttf);
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -35,7 +35,6 @@ a {
 a:hover, a:focus{
 	text-decoration: none;
 }
-
 h1, h2, h3, h4, h5, h6, p{
     font-family: 'FVFont', sans-serif;
 }
@@ -162,7 +161,7 @@ Header
     background-color: rgba(12, 184, 182) !important;
 }
 #header{
-    background: url('../ Contact Us /1.jpg') no-repeat fixed;
+    background: url('1.jpg') no-repeat fixed;
     background-size: cover;
     min-height: 720px;
     position: relative;
@@ -209,29 +208,110 @@ Header
 /***********************************
 Services 
 ***********************************/
-.about-single h5 {
-  margin-top: 40px;
-  margin-bottom: 24px;
-  font-weight: bold;
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+html,
+body {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  height: 100%;
+  width: 100%; 
+  background: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+ 
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
 }
 
-.about-icon-wrap {
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.container-fostrap {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
 }
-
-.about-icon-wrap .fa {
-  font-size: 24px;
+.fostrap-logo {
+  width: 100px;
+  margin-bottom:15px
+}
+h1.heading {
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  color: #505050;
+}
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+    margin: 0 0 0.3em;
+  }
+} 
+.card {
+  display: block; 
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-card {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-card img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover; 
+  transition: all .25s ease;
+} 
+.card-content {
+  padding:15px;
+  text-align:left;
+}
+.card-title {
+  margin-top:0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+.card-title a {
+  color: #000;
+  text-decoration: none !important;
+}
+.card-read-more {
+  border-top: 1px solid #D4D4D4;
+}
+.card-read-more a {
+  text-decoration: none !important;
+  padding:10px;
+  font-weight:600;
+  text-transform: uppercase
 }
 /***********************************
 cta-1 
 ***********************************/
-.contact-address {
+.numbers {
 background: #0000 none repeat scroll 0 0;
 padding: 10px 0;
 }
@@ -648,7 +728,9 @@ Contact Us
 .message-contactform {
     margin: 15px 0;
 }
-/***********************************/
+/***********************************
+Footer  
+***********************************/
 .footer-distributed{
 	background-color: #292c2f;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -715,7 +797,7 @@ Contact Us
 }
 
 .footer-distributed .footer-center i{
-	
+	background-color:  #292c2f;
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
@@ -747,7 +829,7 @@ Contact Us
 }
 
 .footer-distributed .footer-center p a{
-	color:  #fff;
+	color:  #ffffff;
 	text-decoration: none;;
 }
 
@@ -783,6 +865,7 @@ Contact Us
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
+	background-color:  #292c2f;
 	border-radius: 2px;
 
 	font-size: 20px;
@@ -793,10 +876,14 @@ Contact Us
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+.logo {
+	width: 100%;
+	align-content: center;
+	vertical-align: center;
+}
 .footer-logo{
 	width: 50%;
 }
-
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
@@ -817,9 +904,6 @@ Contact Us
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
-	.footer-logo{
-	width: 50%;
-}
 
 }
 
